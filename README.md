@@ -5,7 +5,7 @@ This repo experiments with cross-data evaluation from pre-existing datasets such
 These experiments utilize the TorchReid Library created by Kaiyang Zhou <https://kaiyangzhou.github.io/deep-person-reid/> as a means to test Cross-Entropy and Triplet Loss Function's effects on mAP, and rank accuracies on collected datasets.
 
 ## Training Data
-### Market 1501 <https://deepai.org/dataset/market-1501>
+###### Market 1501 <https://deepai.org/dataset/market-1501>
 
 ![alt text](https://pythonawesome.com/content/images/2018/07/beyond-part-models.jpg)
 
@@ -13,16 +13,16 @@ Market-1501 dataset annotates 27 attributes, containing 751 identities for train
 
 These images are used for cross-data evaluation on our dataset containing two disjoint cameras in various variable environment settings (lighting, view, background).
 
-## Image of Rank@5 Outputs
+## Ranking@10 Image Preview
 
 ## Softmax + CE Loss (Random Crop, Random Flip)
 ![alt text](https://github.com/BonaventureR/person-reid/blob/master/visrank_cvision_results/visrank_softmax_randomerase_dataset/visrank_cvision/0007_c2s2_0024.jpg)
 
-## Softmax + CE Loss (Random Crop, Random Flip, Random Erase, Color Jitter)
+### Softmax + CE Loss (Random Crop, Random Flip, Random Erase, Color Jitter)
 ![alt text](https://github.com/BonaventureR/person-reid/blob/master/visrank_cvision_results/visrank_softmax_randomerase_dataset_2/visrank_cvision/0003_c2s1_16.jpg)
 
 
-## Triplet Loss
+### Triplet Loss
 
 ![alt text](https://github.com/BonaventureR/person-reid/blob/master/visrank_cvision_results/visrank_triplet_dataset/visrank_cvision/0005_c2s1_12.jpg)
 
@@ -45,3 +45,18 @@ But also, performed poorly in some examples,
 | Rank@10     |           53.2%              |                  79.5%                      |           51.9%              |
 | Rank@20     |           63.3%              |                  84.6%                      |           67.1%              |
 
+## References
+
+[1] Hermans, A., Beyer, L., &amp; Leibe, B. (2017). In Defense of Triplet Loss for Person Re-Identification. Retrieved December 15, 2020, from https://arxiv.org/pdf/1703.07737.pdf
+
+[2] Li, W., Zhao, R., Xiao, T., &amp; Wang, X. (2014). DeepReID: Deep Filter Pairing Neural Network for Person Re-identification. 2014 IEEE Conference on Computer Vision and Pattern Recognition. doi:10.1109/cvpr.2014.27
+
+[3] Wang, G., Lai, J., Huang, P., &amp; Xie, X. (2018). Spatial-Temporal Person Re-identification. Retrieved December 15, 2020, from https://arxiv.org/pdf/1812.03282v1.pdf
+
+[4] Zheng, L., Shen, L., Tian, L., Wang, S., Wang, J., &amp; Tian, Q. (2015). Scalable Person Re-Identification: A Benchmark. Retrieved December 16, 2020, from https://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Zheng_Scalable_Person_Re-Identification_ICCV_2015_paper.pdf
+
+[5] Zhong, Z., Zheng, L., Zheng, Z., Li, S., &amp; Yang, Y. (2018). Camera Style Adaptation for Person Re-identification. Retrieved December 15, 2020, from https://arxiv.org/pdf/1711.10295.pdf
+
+[6] Li, W., Zhao, R., Xiao, T., &amp; Wang, X. (2014). DeepReID: Deep Filter Pairing Neural Network for Person Re-identification. 2014 IEEE Conference on Computer Vision and Pattern Recognition. doi:10.1109/cvpr.2014.27
+
+[7] Hirzer, M., Beleznai, C., Roth, P., & Bischof, H. (2011). Person Re-identification by Descriptive and Discriminative Classification. SCIA.
